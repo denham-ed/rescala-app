@@ -1,5 +1,8 @@
 
-
+/* ------------------------------- Text */
+.subtitle{
+    font-size: 120%;
+}
 /* ------------------------------ Sizing */
 .full-page{
     height: 90vh;
@@ -8,6 +11,15 @@
 .h-20 {
     min-height: 20%;
 }
+
+.h-30 {
+    min-height: 30%;
+}
+
+.h-40 {
+    min-height: 40%;
+}
+
 
 /* ------------------------------ All Auth Templates */
 .input-sign-up > input{
