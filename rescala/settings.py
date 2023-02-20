@@ -52,7 +52,10 @@ INSTALLED_APPS = [
     'practice_log'
 ]
 
-SITE_ID = 1
+SITE_ID = 2
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -121,6 +124,8 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend'
 
 ]
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
 # Internationalization
