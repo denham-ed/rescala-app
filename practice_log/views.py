@@ -17,4 +17,4 @@ class Resources(TemplateView):
 
 class Log_Practice(TemplateView):
 
-    template_name = "resources.html"
+    template_name = "log_practice.html"
