@@ -7,8 +7,9 @@ from django.views.generic.base import TemplateView
 
 
 class Dashboard(TemplateView):
-
     template_name = "base.html"
 
-    # def get(self, request, *args, **kwargs):
-    #     return HttpResponse('Hello, World')
+
+class Resources(TemplateView):
+
+    template_name = "base.html"
