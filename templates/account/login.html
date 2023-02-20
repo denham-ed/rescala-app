@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block content %}
+<div class="container-fluid">
+
+  <div class="row full-page">
+    <div class="d-flex col-md-8 justify-content-center">
+      <div class=" p-5">
+        <div class="d-flex flex-column justify-content-center h-20">
+          <h1>Log In To Your Account</h1>
+        </div>
+        <div>
+          <form class="login d-flex flex-column align-items-center mt-5" method="POST"
+            action="{% url 'account_login' %}">
+            {% csrf_token %}
+            <div class="w-75  input-sign-up my-2">
+              {{form.login}}
+            </div>
+            <div class="w-75  input-sign-up my-2">
+              {{form.password}}
+            </div>
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <div class=" d-flex justify-content-center w-75 input-sign-up my-2">
+              <button class="btn btn-dark" type="submit">{% trans "Sign In" %}</button>
+            </div>
+          </form>
+          <hr />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 border bg-dark text-white">
+      <h2>World</h2>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

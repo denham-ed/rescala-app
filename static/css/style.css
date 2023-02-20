@@ -1,0 +1,18 @@
+
+
+/* ------------------------------ Sizing */
+.full-page{
+    height: 90vh;
+}
+
+.h-20 {
+    min-height: 20%;
+}
+
+/* ------------------------------ All Auth Templates */
+.input-sign-up > input{
+    width: 100%;
+}
+.input-sign-up > button{
+    width: 75%;
+}
