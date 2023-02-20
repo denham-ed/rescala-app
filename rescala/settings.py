@@ -56,6 +56,7 @@ SITE_ID = 2
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT = '/'
+LOGOUT_REDIRECT_URL = '/accounts/login'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
