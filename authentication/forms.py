@@ -14,14 +14,14 @@ class CustomSignUpForm(SignupForm):
         self.fields["username"].widget = forms.TextInput(
             attrs={'placeholder': '',
                    'label': '',
-                   'class': 'input-field',
+                   'class': 'input-field py-1',
                    'required': True})
         self.fields["password1"].widget = forms.PasswordInput(
             attrs={'placeholder': '',
                    'label': '',
-                   'class': 'input-field'})
+                   'class': 'input-field py-1'})
 
         self.fields["password2"].widget = forms.PasswordInput(
             attrs={'placeholder': '',
                    'label': '',
-                   'class': 'input-field'})
+                   'class': 'input-field py-1'})

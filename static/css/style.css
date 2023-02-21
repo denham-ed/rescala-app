@@ -1,4 +1,10 @@
 
+/* ------------------------------- Base HTML Elements */
+
+a {
+	color: red;
+	text-decoration: none;
+}
 /* ------------------------------- Text */
 .subtitle{
     font-size: 120%;
@@ -20,6 +26,12 @@
     min-height: 40%;
 }
 
+/* ------------------------------- Icons */
+.sign-up-icon{
+	font-size: 300%;
+	padding-bottom: 1rem;
+}
+
 
 /* ------------------------------ All Auth Templates */
 .input-sign-up > input{
@@ -29,10 +41,14 @@
     width: 75%;
 }
 
+.input-field {
+	border-radius: 5px;
+}
 
 /* https://stackoverflow.com/questions/35942247/how-to-move-placeholder-to-top-on-focus-and-while-typing */
 .user-input-wrp {
 	position: relative;
+	color: black;
 	/* width: 50%; */
 }
 .user-input-wrp .input-field{
@@ -55,6 +71,7 @@
 }
 .user-input-wrp input:focus ~ .floating-label,
 .user-input-wrp input:not(:focus):valid ~ .floating-label{
+	color: #fff;
 	top: 0px;
 	left: 10px;
 	font-size: 13px;
