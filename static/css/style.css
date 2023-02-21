@@ -26,6 +26,13 @@ a {
     min-height: 40%;
 }
 
+/* ------------------------------ Spacing */
+
+.authentication-title-row{
+	margin-top: 5rem;
+}
+
+
 /* ------------------------------- Icons */
 .sign-up-icon{
 	font-size: 300%;
