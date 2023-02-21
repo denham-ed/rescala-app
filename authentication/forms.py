@@ -10,3 +10,18 @@ class CustomSignUpForm(SignupForm):
         self.fields["username"].label = ""
         self.fields["password1"].label = ""
         self.fields["password2"].label = ""
+
+        self.fields["username"].widget = forms.TextInput(
+            attrs={'placeholder': '',
+                   'label': '',
+                   'class': 'input-field',
+                   'required': True})
+        self.fields["password1"].widget = forms.PasswordInput(
+            attrs={'placeholder': '',
+                   'label': '',
+                   'class': 'input-field'})
+
+        self.fields["password2"].widget = forms.PasswordInput(
+            attrs={'placeholder': '',
+                   'label': '',
+                   'class': 'input-field'})
