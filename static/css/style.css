@@ -49,9 +49,9 @@
 .user-input-wrp .floating-label {
 	position: absolute;
 	pointer-events: none;
-	top: 18px;
-	left: 10px;
-	transition: 0.2s ease all;
+	left: 1rem;
+	bottom: 0.2rem;
+	transition: 0.4s ease all;
 }
 .user-input-wrp input:focus ~ .floating-label,
 .user-input-wrp input:not(:focus):valid ~ .floating-label{
@@ -59,6 +59,11 @@
 	left: 10px;
 	font-size: 13px;
 	opacity: 1;
+}
+/* Assist from
+https://www.educative.io/answers/how-to-add-icons-inside-input-elements-in-html */
+.input-icons i {
+	padding-right: 0.5rem;
 }
 
 
