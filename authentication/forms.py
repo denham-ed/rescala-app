@@ -7,6 +7,8 @@ class CustomSignUpForm(SignupForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+        self.fields["username"] = forms.CharField(max_length=5)
+
         self.fields["username"].label = ""
         self.fields["password1"].label = ""
         self.fields["password2"].label = ""
@@ -24,6 +26,17 @@ class CustomSignUpForm(SignupForm):
             attrs={'placeholder': '',
                    'label': '',
                    'class': 'input-field py-1'})
+                   
+    def save(self, request):
+
+        # Ensure you call the parent class's save.
+        # .save() returns a User object.
+        user = super(MyCustomSignupForm, self).save(request)
+
+        # Add your own processing here.
+
+        # You must return the original result.
+        return user
 
 
 class CustomLoginForm(LoginForm):
