@@ -1,4 +1,5 @@
 from django import forms
+from . import models
 from allauth.account.forms import SignupForm, PasswordField, LoginForm
 
 
@@ -37,6 +38,12 @@ class CustomSignUpForm(SignupForm):
 
         # You must return the original result.
         return user
+
+
+# class StudentProfileSignUp(forms.ModelForm):
+#     class Meta:
+#         model = models.StudentProfile
+#         fields('')
 
 
 class CustomLoginForm(LoginForm):
