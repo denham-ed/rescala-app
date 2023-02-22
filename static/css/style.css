@@ -100,6 +100,12 @@ body {
 	padding-bottom: 1rem;
 }
 
+.r-logo {
+    border: 0.2rem solid white;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
 /* ------------------------------ All Auth Templates */
 .input-sign-up > input{
     width: 100%;
