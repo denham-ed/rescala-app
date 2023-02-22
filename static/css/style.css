@@ -1,6 +1,5 @@
 
 /* ------------------------------- Base HTML Elements */
-
 a {
 	color: red;
 	text-decoration: none;
@@ -14,6 +13,7 @@ a {
 .black-text {
 	color: black !important;
 }
+
 /* ------------------------------ Sizing */
 .full-page{
     height: 90vh;
@@ -32,11 +32,9 @@ a {
 }
 
 /* ------------------------------ Spacing */
-
 .authentication-title-row{
 	margin-top: 5rem;
 }
-
 
 /* ------------------------------- Icons */
 .sign-up-icon{
@@ -44,11 +42,11 @@ a {
 	padding-bottom: 1rem;
 }
 
-
 /* ------------------------------ All Auth Templates */
 .input-sign-up > input{
     width: 100%;
 }
+
 .input-sign-up > button{
     width: 75%;
 }
