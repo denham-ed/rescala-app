@@ -11,6 +11,7 @@ h1,h2,h3{
 
 body {
 	font-family: 'Work Sans', Courier, monospace;
+	background-color: #E8F1F2;
 }
 
 /* ------------------------------- Colours */
@@ -101,7 +102,7 @@ body {
 }
 
 .r-logo {
-    border: 0.2rem solid white;
+    border: 0.2rem solid #E8F1F2;
     width: 3.5rem;
     height: 3.5rem;
 }
@@ -133,7 +134,7 @@ body {
  	box-shadow: none !important;
 }
 .user-input-wrp .input-field:focus{
-	border-color: blue;
+	border-color: #B80C09;
 	border-width: medium medium 2px;
 }
 .user-input-wrp .floating-label {
@@ -145,7 +146,7 @@ body {
 }
 .user-input-wrp input:focus ~ .floating-label,
 .user-input-wrp input:not(:focus):valid ~ .floating-label{
-	color: #fff;
+	color: #E8F1F2;
 	top: 0px;
 	left: 10px;
 	font-size: 13px;
