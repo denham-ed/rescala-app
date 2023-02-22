@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
+<body class='flex-shrink-0'>
 <!-- Navigation Bar -->
 {% block my_header%}
 
@@ -61,11 +62,52 @@
 </nav>
 {%endblock my_header%}
 
-<body class='d-flex flex-column h-100'>
+
   <main>
     {% block content %}
     {% endblock content %}
   </main>
+
+  <!-- Footer -->
+  <!-- <footer class="footer mt-auto py-3 ">
+    <p class="m-0 text-center ">Made by Code Instituters</p>
+    <p class="mt-2 text-center ">Follow us: 
+        <i class="fab fa-facebook-square ms-3"></i>
+        <i class="fab fa-twitter-square ms-3"></i>
+        <i class="fab fa-instagram-square ms-3"></i>
+        <i class="fab fa-youtube-square ms-3"></i></p>
+</footer> -->
+
+<footer class="footer mt-auto p-3 ">
+  <div class="row">
+    <div class="col-md-8 d-flex flex-column align-items-center align-items-md-start">
+      <div class="subtitle">
+        Rescala
+      </div>
+      <div>
+        Rehearse. Record. Repeat.
+      </div>
+
+    </div>
+    <div class="col-md-4">
+      <div class="div text-center">About the designer:</div>
+      <div class="d-flex justify-content-center">
+        <a href="https://github.com/denham-ed" target="_blank">
+        <div class="circle d-flex justify-content-center align-items-center mx-2">
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </a>
+        <a href="https://www.linkedin.com/in/ed-denham-313743153/" target="_blank">
+          <div class="circle d-flex justify-content-center align-items-center mx-2">
+            <i class="fa-brands fa-linkedin"></i>        </div>
+        </div>
+ 
+
+    </div>
+  </div>
+</footer>
+
+
 
 </body>
 

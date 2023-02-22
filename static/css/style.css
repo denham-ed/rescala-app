@@ -5,15 +5,25 @@ a {
 	text-decoration: none;
 }
 
+
+
 h1,h2,h3{
 	font-family: 'Fraunces', Courier, monospace;
 }
+
+
 
 body {
 	font-family: 'Work Sans', Courier, monospace;
 	background-color: #E8F1F2;
 }
 
+/* ------------------------------- Footer */
+
+footer p i {
+	color: red;
+	font-size: 140%;
+}
 /* ------------------------------- Colours */
 
 .bg-dark-green{
@@ -74,8 +84,14 @@ body {
 }
 
 /* ------------------------------ Sizing */
-.full-page{
-    height: 90vh;
+
+.row-fill {
+	min-height: calc(100vh - 6rem);
+}
+
+.fill {
+	height: 100%;
+	min-height: 100%;
 }
 
 .h-20 {
@@ -105,6 +121,18 @@ body {
     border: 0.2rem solid #E8F1F2;
     width: 3.5rem;
     height: 3.5rem;
+}
+
+.circle{
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	background-color: #14281D;
+}
+
+.circle i {
+	color: #E8F1F2;
+	font-size: 120%;
 }
 
 /* ------------------------------ All Auth Templates */
