@@ -26,12 +26,12 @@ class CustomSignUpForm(SignupForm):
             attrs={'placeholder': '',
                    'label': '',
                    'class': 'input-field py-1'})
-                   
+
     def save(self, request):
 
         # Ensure you call the parent class's save.
         # .save() returns a User object.
-        user = super(MyCustomSignupForm, self).save(request)
+        user = super(CustomSignUpForm, self).save(request)
 
         # Add your own processing here.
 

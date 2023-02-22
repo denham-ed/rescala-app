@@ -1,4 +1,5 @@
 from allauth.account.adapter import DefaultAccountAdapter
+from django.forms import ValidationError
 
 class CustomAccountAdapter(DefaultAccountAdapter):
     def strong_password(self, password):
