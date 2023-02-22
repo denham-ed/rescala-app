@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
+<body class='flex-shrink-0'>
 <!-- Navigation Bar -->
 {% block my_header%}
 
@@ -61,14 +62,14 @@
 </nav>
 {%endblock my_header%}
 
-<body class='d-flex flex-column h-100'>
+
   <main>
     {% block content %}
     {% endblock content %}
   </main>
 
   <!-- Footer -->
-  <footer class="footer mt-auto py-3 dark-bg">
+  <footer class="footer mt-auto py-3 ">
     <p class="m-0 text-center ">Made by Code Instituters</p>
     <p class="m-0 text-center ">Follow us: <i class="fab fa-facebook-square ms-3"></i>
         <i class="fab fa-twitter-square ms-3"></i>
