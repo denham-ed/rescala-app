@@ -8,7 +8,7 @@
 <div class="container-fluid">
 
   <div class="row full-page">
-    <div class="col-md-6 pb-xs-5 bg-light">
+    <div class="col-md-6 pb-xs-5 bg-green">
       <div class="row">
         <div class="col-md-3 d-flex justify-content-center justify-content-md-start">
           <h1 class="'r-logo">R</h1>
@@ -24,24 +24,24 @@
             <div class="user-input-wrp my-2 input-icons">
               <br />
               {{form.login}}
-              <span class='floating-label black-text'> <i class="fa-regular fa-user"></i>Username</span>
+              <span class='floating-label'> <i class="fa-regular fa-user"></i>Username</span>
             </div>
             <div class="user-input-wrp my-2 input-icons">
               <br />
               {{form.password}}
-              <span class='floating-label black-text'><i class="fa-solid fa-key"></i></i>Password</span>
+              <span class='floating-label'><i class="fa-solid fa-key"></i></i>Password</span>
             </div>
             {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
             {% endif %}
             <div class='d-flex justify-content-center mb-5 mt-4'>
-              <button class="btn btn-dark " type="submit">Log in</button>
+              <button class="btn btn-light " type="submit">Log in</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-    <div class="col-md-6 d-flex flex-column  bg-primary text-white">
+    <div class="col-md-6 d-flex flex-column  bg-dark-green text-white">
       <div class="d-flex justify-content-center mt-md-5 pt-md-5 mt-2 pt-2">
         <h2 class="text-center">Want to Improve Your Practice?</h2>
       </div>

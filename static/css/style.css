@@ -5,6 +5,14 @@ a {
 	text-decoration: none;
 }
 
+h1,h2,h3{
+	font-family: 'Fraunces', Courier, monospace;
+}
+
+body {
+	font-family: 'Work Sans', Courier, monospace;
+}
+
 /* ------------------------------- Colours */
 
 .bg-dark-green{
@@ -22,6 +30,17 @@ a {
 	background-color: #E8F1F2;
 }
 
+.btn-very-dark{
+	color: #E8F1F2;
+	background-color: #14281D;
+}
+
+.btn-very-dark:hover{
+	color: #14281D;
+	background-color: #E8F1F2;
+	border: 1px solid #14281D;
+}
+
 .btn-dark{
 	color: #14281D;
 	background-color: #E8F1F2;
@@ -31,6 +50,18 @@ a {
 	color: #E8F1F2;
 	background-color: #355834
 }
+
+.btn-light{
+	color: #355834;
+	background-color: #E8F1F2;
+}
+
+.btn-light:hover {
+	color: #E8F1F2;
+	background-color: #14281D;
+}
+
+
 
 /* ------------------------------- Text */
 .subtitle{
