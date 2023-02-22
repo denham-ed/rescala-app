@@ -127,6 +127,8 @@ AUTHENTICATION_BACKENDS = [
 
 ]
 
+AUTH_USER_MODEL = 'authentication.StudentProfile'
+
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 

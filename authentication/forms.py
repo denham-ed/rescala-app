@@ -1,14 +1,17 @@
 from django import forms
 from . import models
+
 from allauth.account.forms import SignupForm, PasswordField, LoginForm
 
 
 class CustomSignUpForm(SignupForm):
 
+    class Meta:
+        model = models.StudentProfile
+        fields =('first_name',)
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-
-        self.fields["username"] = forms.CharField(max_length=5)
 
         self.fields["username"].label = ""
         self.fields["password1"].label = ""
@@ -27,6 +30,7 @@ class CustomSignUpForm(SignupForm):
             attrs={'placeholder': '',
                    'label': '',
                    'class': 'input-field py-1'})
+    
 
     def save(self, request):
 

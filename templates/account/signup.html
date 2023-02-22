@@ -32,7 +32,11 @@
                         {% csrf_token %}
                         <div class="user-input-wrp my-2 input-icons">
                             <br />
-
+                            {{form.first_name}}
+                            <span class='floating-label'> <i class="fa-regular fa-user"></i>Enter a username</span>
+                        </div>
+                        <div class="user-input-wrp my-2 input-icons">
+                            <br />
                             {{form.username}}
                             <span class='floating-label'> <i class="fa-regular fa-user"></i>Enter a username</span>
                         </div>
