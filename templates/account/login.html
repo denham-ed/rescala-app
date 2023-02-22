@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block my_header %}{% endblock my_header %}
+{% block content %}
+<div class="container-fluid">
+
+  <div class="row full-page">
+    <div class="col-md-6 pb-xs-5 bg-green">
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center justify-content-md-start">
+          <div class="r-logo d-flex justify-content-center align-items-center mt-3">
+            <h1>R</h1>
+        </div>
+        </div>
+        <div class="d-flex col-md-6 justify-content-center mt-md-5 pt-md-5">
+          <h1 class="text-center ">Log In To Your Account</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-flex col justify-content-center pb-xs-5 pb-md-0">
+          <form class="login w-50" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %}
+            <div class="user-input-wrp my-2 input-icons">
+              <br />
+              {{form.login}}
+              <span class='floating-label'> <i class="fa-regular fa-user"></i>Username</span>
+            </div>
+            <div class="user-input-wrp my-2 input-icons">
+              <br />
+              {{form.password}}
+              <span class='floating-label'><i class="fa-solid fa-key"></i></i>Password</span>
+            </div>
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <div class='d-flex justify-content-center mb-5 mt-4'>
+              <button class="btn btn-light " type="submit">Log in</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex flex-column  bg-dark-green text-white">
+      <div class="d-flex justify-content-center mt-md-5 pt-md-5 mt-2 pt-2">
+        <h2 class="text-center">Want to Improve Your Practice?</h2>
+      </div>
+      <div class="row my-5 pt-md-5">
+        <div class="col ">
+          <p class="subtitle text-center">Register <strong>Rescala</strong> and start working towards your goals now!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col justify-content-center text-center">
+          <a class="btn btn-dark" href="{{ signup_url }}">Sign Up</a>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
