@@ -5,6 +5,33 @@ a {
 	text-decoration: none;
 }
 
+/* ------------------------------- Colours */
+
+.bg-dark-green{
+	background-color: #14281D;
+	color: #E8F1F2;
+}
+
+.bg-green{
+	background-color: #355834;
+	color: #E8F1F2;
+}
+
+.bg-white{
+	color: #14281D;
+	background-color: #E8F1F2;
+}
+
+.btn-dark{
+	color: #14281D;
+	background-color: #E8F1F2;
+}
+
+.btn-dark:hover {
+	color: #E8F1F2;
+	background-color: #355834
+}
+
 /* ------------------------------- Text */
 .subtitle{
     font-size: 120%;
