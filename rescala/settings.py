@@ -130,7 +130,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
 ACCOUNT_FORMS = {
-    "login": "allauth.account.forms.LoginForm",
+    "login": "authentication.forms.CustomLoginForm",
     "signup": "authentication.forms.CustomSignUpForm",
     "add_email": "allauth.account.forms.AddEmailForm",
     "change_password": "allauth.account.forms.ChangePasswordForm",

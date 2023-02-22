@@ -1,5 +1,5 @@
 from django import forms
-from allauth.account.forms import SignupForm, PasswordField
+from allauth.account.forms import SignupForm, PasswordField, LoginForm
 
 
 class CustomSignUpForm(SignupForm):
@@ -14,8 +14,7 @@ class CustomSignUpForm(SignupForm):
         self.fields["username"].widget = forms.TextInput(
             attrs={'placeholder': '',
                    'label': '',
-                   'class': 'input-field py-1',
-                   'required': True})
+                   'class': 'input-field py-1'})
         self.fields["password1"].widget = forms.PasswordInput(
             attrs={'placeholder': '',
                    'label': '',
@@ -25,3 +24,22 @@ class CustomSignUpForm(SignupForm):
             attrs={'placeholder': '',
                    'label': '',
                    'class': 'input-field py-1'})
+
+
+class CustomLoginForm(LoginForm):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.fields["login"].label = ""
+        self.fields["password"].label = ""
+
+        self.fields["login"].widget = forms.TextInput(
+            attrs={'placeholder': '',
+                   'label': '',
+                   'class': 'input-field py-1'})
+        self.fields["password"].widget = forms.PasswordInput(
+            attrs={'placeholder': '',
+                   'label': '',
+                   'class': 'input-field py-1'})
+

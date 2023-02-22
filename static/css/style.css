@@ -5,9 +5,14 @@ a {
 	color: red;
 	text-decoration: none;
 }
+
 /* ------------------------------- Text */
 .subtitle{
     font-size: 120%;
+}
+
+.black-text {
+	color: black !important;
 }
 /* ------------------------------ Sizing */
 .full-page{

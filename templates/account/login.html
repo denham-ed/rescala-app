@@ -17,11 +17,15 @@
           <form class="login d-flex flex-column align-items-center mt-5" method="POST"
             action="{% url 'account_login' %}">
             {% csrf_token %}
-            <div class="w-75  input-sign-up my-2">
+            <div class="user-input-wrp my-2 input-icons">
+              <br />
               {{form.login}}
+              <span class='floating-label black-text'> <i class="fa-regular fa-user"></i>Enter a username</span>
             </div>
-            <div class="w-75  input-sign-up my-2">
+            <div class="user-input-wrp my-2 input-icons">
+              <br />
               {{form.password}}
+              <span class='floating-label black-text'><i class="fa-solid fa-key"></i></i>Enter a password</span>
             </div>
             {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
